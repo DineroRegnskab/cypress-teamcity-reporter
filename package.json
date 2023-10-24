@@ -1,10 +1,10 @@
 {
-  "name": "mocha-teamcity-reporter",
+  "name": "@dineroregnskab/cypress-teamcity-reporter",
   "engines": {
     "node": ">=6"
   },
   "version": "4.2.0",
-  "description": "teamcity reporter for mocha",
+  "description": "teamcity reporter for cypress",
   "main": "./lib/teamcity.js",
   "directories": {
     "lib": "./lib"
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/travisjeffery/mocha-teamcity-reporter"
+    "url": "https://github.com/DineroRegnskab/cypress-teamcity-reporter"
   },
   "keywords": [
     "mocha",
@@ -38,7 +38,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/travisjeffery/mocha-teamcity-reporter/issues"
+    "url": "https://github.com/DineroRegnskab/cypress-teamcity-reporter/issues"
   },
   "devDependencies": {
     "chai": "^4.3.4",

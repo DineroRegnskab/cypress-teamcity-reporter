@@ -1,10 +1,8 @@
-[![NPM version](https://badge.fury.io/js/mocha-teamcity-reporter.svg)](http://badge.fury.io/js/mocha-teamcity-reporter)
-[![TeamCity Build Status](https://teamcity.jetbrains.com/guestAuth/app/rest/builds/buildType:(id:TeamCityThirdPartyPlugins_MochaTeamcityReporter_Build)/statusIcon.svg)](https://teamcity.jetbrains.com/viewType.html?buildTypeId=TeamCityThirdPartyPlugins_MochaTeamcityReporter_Build&branch_TeamCityThirdPartyPlugins_MochaTeamcityReporter=%3Cdefault%3E&tab=buildTypeStatusDiv)
-[![Monthly Downloads](https://img.shields.io/npm/dm/mocha-teamcity-reporter.svg)](https://npmjs.org/package/mocha-teamcity-reporter)
+[![npm version](https://badge.fury.io/js/@dineroregnskab%2Fcypress-teamcity-reporter.svg)](https://badge.fury.io/js/@dineroregnskab%2Fcypress-teamcity-reporter)
 
-# mocha-teamcity-reporter #
+# @dineroregnskab/cypress-teamcity-reporter #
 
-`mocha-teamcity-reporter` Teamcity reporter which makes it possible to display test results in real-time, makes test information
+`cypress-teamcity-reporter` Teamcity reporter which makes it possible to display test results in real-time, makes test information
 available on the Tests tab of the Build Results page.
 
 ## Version 4.x changes
@@ -31,14 +29,14 @@ available on the Tests tab of the Build Results page.
 
 In your project run a npm install command:
 
-``` npm install mocha-teamcity-reporter --save-dev ```
+``` npm install @dineroregnskab/cypress-teamcity-reporter --save-dev ```
 
 Basically, have your project's package.json be like:
 
 ``` js
 {
   "devDependencies": {
-    "mocha-teamcity-reporter": ">=2.0.0"
+    "@dineroregnskab/cypress-teamcity-reporter": ">=2.0.0"
   }
 }
 ```
@@ -49,7 +47,7 @@ Basically, have your project's package.json be like:
 
 Then call mocha with:
 
-`mocha --reporter mocha-teamcity-reporter test`
+`mocha --reporter @dineroregnskab/cypress-teamcity-reporter test`
 
 ## Running In Browser
 
@@ -63,7 +61,7 @@ Then call mocha with:
 ### TeamCity flowId
 
 Can set flowId like:
-`mocha test --reporter mocha-teamcity-reporter --reporter-options flowId=gobbledygook`
+`mocha test --reporter @dineroregnskab/cypress-teamcity-reporter --reporter-options flowId=gobbledygook`
 
 ### Top-level suite name
 
@@ -105,7 +103,7 @@ This option should be used in pair with recordHookFailures. It allows you to ski
 * Reporter option: ignoreHookWithName=HookNoReporting
 
 Example:
-`mocha test --reporter mocha-teamcity-reporter --reporter-options recordHookFailures --reporter-options ignoreHookWithName=HookNoReporting`
+`mocha test --reporter @dineroregnskab/cypress-teamcity-reporter --reporter-options recordHookFailures --reporter-options ignoreHookWithName=HookNoReporting`
 
 For root hooks defined the following way:
 
@@ -149,13 +147,13 @@ AssertionError [ERR_ASSERTION]: 2 == 1
 
 * Set with reporter-options:
 
-`mocha test --reporter mocha-teamcity-reporter --reporter-options topLevelSuite=top-level-suite-name`
-`mocha test --reporter mocha-teamcity-reporter --reporter-options useStdError=true`
-`mocha test --reporter mocha-teamcity-reporter --reporter-options useStdError=true`
+`mocha test --reporter @dineroregnskab/cypress-teamcity-reporter --reporter-options topLevelSuite=top-level-suite-name`
+`mocha test --reporter @dineroregnskab/cypress-teamcity-reporter --reporter-options useStdError=true`
+`mocha test --reporter @dineroregnskab/cypress-teamcity-reporter --reporter-options useStdError=true`
 
 * Set with environment variable
 
-`MOCHA_TEAMCITY_TOP_LEVEL_SUITE='top-level-suite-name' mocha test --reporter mocha-teamcity-reporter`
+`MOCHA_TEAMCITY_TOP_LEVEL_SUITE='top-level-suite-name' mocha test --reporter @dineroregnskab/cypress-teamcity-reporter`
 
 ### Multiple reporters
 
@@ -179,7 +177,7 @@ This is not supported out of the box by this plugin but have a look at the follo
 
 ## Run example test in project
 
-`mocha test/test_data/simple.js --reporter mocha-teamcity-reporter` or `npm run test-teamcity-example`
+`mocha test/test_data/simple.js --reporter @dineroregnskab/cypress-teamcity-reporter` or `npm run test-teamcity-example`
 
 ## Reference Information
 

@@ -4,7 +4,7 @@ Briefly describe the issue you are experiencing (or the feature you want to add)
 
 ## Environment
 
-* What mocha-teamcity-reporter version are you using
+* What @dineroregnskab/cypress-teamcity-reporter version are you using
 * Version of NPM/yarn etc and Node.js
 * Version of teamcity (If Applicable)
 
